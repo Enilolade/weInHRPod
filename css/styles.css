@@ -1,0 +1,281 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Red Hat Display', Arial, sans-serif;
+    font-size: 2rem;
+    height: 100vh;
+    width: 100%;
+}
+main {
+    margin-bottom: 20px;
+}
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+h1, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+/* h2 {
+    font-weight: 500;
+} */
+p {
+    font-size: 1rem;
+}
+/* Specific styling */
+.navbar {
+    background-color: #f29727 !important;
+    font-family: 'Caprasimo', cursive;
+    width: 100% !important;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+}
+.WeinHR-logo {
+    width: 5rem;
+}
+.nav-link {
+    font-size: 1rem;
+}
+hr {
+    border: none; /* Remove default border */
+    height: 5px; /* Set height */
+    background-color: #cf7507; /* Set background color */
+    margin: 20px auto; /* Add some space around the HR */
+    width: 20%;
+}
+#hero-section {
+    height: 80vh;
+    position: relative;
+}
+.hero-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+.hero-container {
+    display: flex;
+    gap: 2rem;
+}
+.introduction {
+    align-items: center;
+    background-color: #f29727;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction > h2 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+/* .introduction > * {
+    color: #fff;
+} */
+.introduction p {
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+#episode-section {
+    text-align: center;
+}
+.episode-container {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0 auto;
+    margin-top: 60px;
+    /* text-align: center; */
+    width: 80%;
+}
+.episode > h3, .episode > p {
+    background-color: #f29727;
+    /* color: #fff; */
+    margin: auto;
+    width: 18rem;
+}
+.episode > h3 {
+    border-radius: 8px 8px 0 0;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.ep-thumbnail {
+    width: 18rem;
+}
+.episode > p {
+    border-radius: 0 0 8px 8px;
+    font-size: 1rem;
+}
+.play-icon {
+    margin-left: 1rem;
+    width: 2rem;
+}
+.allepisodes-link {
+    background-color: #f29727;
+    color: #fff;
+    margin-top: 30px;
+}
+.allepisodes-link, .contact-link {
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.subscribe {
+    /* color: #fff; */
+    /* font-family: 'Caprasimo', cursive; */
+    margin-top: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+.subscribe-heading, .contact-heading {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.subscribe-link {
+    background-color: #e5dbd0;
+    border: 5px solid #f29727;
+    border-radius: 30px;
+    display: inline-block;
+    margin: auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.subscribe-btn {
+    margin: 0 20px;
+    width: 5rem;
+}
+#contact-section {
+    background-color: #f29727;
+    position: relative;
+}
+.contact-container {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.contact-container p {
+    font-size: 1.2rem;
+}
+.contact-link {
+    background-color: #fff;
+    color: #f29727;
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.btn {
+    width: 4rem;
+}
+.about-quickie, .contact-quickie {
+    margin: auto;
+    width: 80%;
+}
+.line {
+    width: 100%;
+}
+/* media queries */
+@media (min-width: 320px) and (max-width: 600px){
+    .hero-image {
+        background-image: url(../Images/hero-banner-mobile.png);
+    }
+    .episode-container {
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .subscribe {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .subscribe-link {
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 600px){
+    .hero-image {
+        background-image: url(../Images/hero-banner.png);
+    }
+    .ep-thumbnail, .episode > h3, .episode > p {
+        width: 20rem;
+    }
+}
+/* @media (min-width: 600px) and (max-width: 999px){
+    
+    
+} */
+@media (min-width: 1000px){
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .introduction > h2 {
+        font-size: 3rem;
+    }
+    .introduction p {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+    #episode-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    h4 {
+        font-size: 3rem;
+    }
+    .subscribe-heading, .contact-heading {
+        margin-bottom: 25px;
+    }
+    .subscribe-link {
+        margin-right: 1rem;
+    }
+    /* .contact-container {
+        display: flex;
+        height: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+    #contact-section {
+        height: 250px;
+        position: relative;
+    }
+    .contact-heading {
+        margin-top: 50px;
+    }
+    .contact-container p {
+        margin: auto;
+        width: 55%;
+    }
+    .home-quickie {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+    .about-quickie, .contact-quickie {
+        width: 50%;
+    }
+
+}
+@media (min-width: 1200px) {
+    .episode-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,14 @@
+.about {
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    width: 70%;
+}
+.about-pgh > span {
+    font-weight: bolder;
+}
+@media (min-width: 700px) {
+    .about {
+        width: 50%;
+    }
+}
